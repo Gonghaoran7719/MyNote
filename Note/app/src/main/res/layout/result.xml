@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/memento_num"
+        style="@style/TextView"
+        android:layout_width="40dp"
+        android:text="@string/num"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/memento_subject"
+        style="@style/TextView"
+        android:layout_width="50dp"
+        android:text="@string/subject"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/memento_body"
+        style="@style/TextView"
+        android:layout_width="110dp"
+        android:text="@string/body"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/memento_date"
+        style="@style/TextView"
+        android:layout_width="100dp"
+        android:text="@string/date"
+        android:textColor="#000000" />
+
+</LinearLayout>

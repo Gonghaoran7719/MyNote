@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MementoDemo</string>
+    <string name="subject">主题</string>
+    <string name="body">内容</string>
+    <string name="chooseDate">选择时间</string>
+    <string name="add">添加</string>
+    <string name="query">查询</string>
+    <string name="num">编号</string>
+    <string name="date">时间</string>
+</resources>

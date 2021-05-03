@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/subject"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/body"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="4" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/chooseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chooseDate" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                tools:ignore="Deprecated" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add" />
+
+        <Button
+            android:id="@+id/query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/query" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView"
+            android:layout_width="40dp"
+            android:text="@string/num"
+            android:textColor="#000000" />
+
+        <TextView
+            style="@style/TextView"
+            android:layout_width="50dp"
+            android:text="@string/subject"
+            android:textColor="#000000" />
+
+        <TextView
+            style="@style/TextView"
+            android:layout_width="110dp"
+            android:text="@string/body"
+            android:textColor="#000000" />
+
+        <TextView
+            style="@style/TextView"
+            android:layout_width="100dp"
+            android:text="@string/date"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
